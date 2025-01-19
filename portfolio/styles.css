@@ -373,11 +373,11 @@ footer a:hover {
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: #e2e7e6;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 .box{
     border: 2px solid black;
-    height: 400px;
+    height: 500px;
     width: 40%;
     background-color: white;
     padding: 20px 0px 15px;
@@ -410,5 +410,12 @@ footer a:hover {
     height: 300px;
     width: 500px;
 }
-
+h3{
+    color: black;
+    border: 1px solid black;
+    height: 30px ;
+    width: 120px;
+    border-radius: 20px;
+    background-color: yellowgreen;
+}
 
