@@ -3,72 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <title>Abhishek Portfolio</title>
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
-                <span>Abhishek</span>
-            </div>
-            <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#projects">Projects</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#contact">Contact Us</a></div>
-            </div>
-            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
-        </div>
-        <div class="dropdown">
-            <div class="links">
-                <a href="#">Home</a>
-                <a href="#about">About</a>
-                <a href="skills">Skills</a>
-                <a href="projects">Projects</a>
-                <a href="contact">Contact Us</a>
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
-            </div>
-        </div>
+    <nav class="navbar">
+        <a href="#" class="logo">Portfolio</a>
+        <ul>
+           
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Project">Project</a></li>
+            <li><a href="#Contact">Contact</a></li>
+           
+        </ul>
+
+        
     </nav>
+    <div class="bars-animation">
+        <div class="bar" style="--i:6"></div>
+        <div class="bar" style="--i:5"></div>
+        <div class="bar" style="--i:4"></div>
+        <div class="bar" style="--i:3"></div>
+        <div class="bar" style="--i:2"></div>
+        <div class="bar" style="--i:1"></div>
+    </div>
 
-    <section id="about">
-        <div class="main-container">
-            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
-                <img class="profile" src="/CODSOFT/portfolio/image/profile.png" alt="">
-            </div>
-            <div class="content">
-                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Abhishek</span></h1>
-                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a Developer <span></span></div>
-                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Hello! I'm a passionate web developer specializing in creating beautiful, responsive, and user-friendly websites. With skills in modern web technologies, I strive to deliver exceptional digital experiences</p>
-                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
-                    <a href="#" ><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    <section class="home">
+        <div class="home-info">
+            <h1>Abhishek Amilpure</h1>
+            <h2>I'm a 
+                <span style="--i:3" data-text="Fronted Developer"> Fronted Developer</span>
+                <span style="--i:2" data-text="Fronted Developer">Fronted Developer</span>
+                <span style="--i:1" data-text="Fronted Developer"> Fronted Developer</span>
+                
+            </h2>
+            <p>Hello! I'm a passionate web developer specializing in creating beautiful, responsive, and user-friendly websites. With skills in modern web technologies, I strive to deliver exceptional digital experiences.</p>
+
+            <div class="btn-sci">
+                <a href="abhishek resume.pdf" class="btn">Download My Resume</a>
+                <div class="sci">
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+
                 </div>
-                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
-                    <button><a href="/CODSOFT/portfolio/abhishekresume.pdf" download>Download My Resume</a></button>
-                </div>
+
             </div>
+
         </div>
-    </section>
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img class="profile"  src="/CODSOFT/portfolio/image/profile.png" alt="">
+                </div>
+            </div>
 
-    <!-- Skills Section -->
+        </div>
+
+    </section>
     <section id="skills">
-        <div class="skills-container" data-aos="fade-up" data-aos-duration="1000">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML5 & CSS3</li>
-                <li>JavaScript</li>
-                <li>java</li>
-                <li>C++</li>
-                <li>Python</li>
-                <li>Bootstrap Framework</li>
-            </ul>
+        <h2>Skills</h2>
+        <div class="skills-container">
+            
+            <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="skill-bar" data-skill="90">
+                    <div class="skill-bar-fill">
+                        <span>90%</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="skill-bar" data-skill="80">
+                    <div class="skill-bar-fill">
+                        <span>80%</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="skill">
+                <div class="skill-name">JavaScript</div>
+                <div class="skill-bar" data-skill="75">
+                    <div class="skill-bar-fill">
+                        <span>75%</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -76,16 +102,25 @@
     <section id="projects">
         <div class="projects-container" data-aos="fade-up" data-aos-duration="1000">
             <h2>Projects</h2>
-            <div class="project">
-                <h3>Portfolio Website</h3>
-                <p>A personal portfolio showcasing my skills, projects, and achievements.</p>
-                <img class="portfolio" src="/CODSOFT/portfolio/image/portfolio.jpg" alt="Portfolio Website Screenshot">
+            <div class="project-section">
+                <div class="box1 box">
+                    <div class="box-content">
+                     <h2>Amazon clone</h2>
+                     <div class="box1-img"></div>
+                     <p>see more</p>
+                   </div>
+        
+                </div>
+                <div class="box2 box">
+                    <div class="box-content">
+                        <h2>Quiz app</h2>
+                        <div class="box2-img"></div>
+                        <p>see more</p>
+                      </div>
+        
+                </div>
             </div>
-            <div class="project">
-                <h3>E-commerce Platform</h3>
-                <p>Developed a responsive e-commerce platform with a user-friendly interface.</p>
-                <img class="ecomerce" src="/CODSOFT/portfolio/image/ecomer.jpg" alt="E-commerce Platform Screenshot">
-            </div>
+            
         </div>
     </section>
 
@@ -99,24 +134,10 @@
             <p>GitHub: <a href="https://github.com/Ab12345m/CODSOFT">https://github.com/Ab12345m/CODSOFT</a></p>
         </div>
     </section>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init({offset: 0});
-    </script>
-    <script>
-        function hamburg() {
-            const navbar = document.querySelector(".dropdown");
-            navbar.style.transform = "translateY(0px)";
-        }
-        function cancel() {
-            const navbar = document.querySelector(".dropdown");
-            navbar.style.transform = "translateY(-500px)";
-        }
-    </script>
-     <footer>
+    <footer>
         <p>&copy; 2025 Abhishek. All rights reserved. | <a href="#">Privacy Policy</a></p>
     </footer>
+
+    
 </body>
 </html>
-
